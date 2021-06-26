@@ -3,7 +3,7 @@ package com.example.noted.data
 import androidx.room.*
 import java.util.*
 import java.util.concurrent.Flow
-import kotlin.collections.List as List1
+//handles the queries of the application
 
 @Dao
 interface NotesDao {
@@ -14,6 +14,7 @@ interface NotesDao {
     @Delete
     fun delete(notes:Notes)
     @Query("SELECT title FROM notes")
-    fun gettitles():List<Notes>
+    fun gettitles(): List<Notes>
+
 
 }
