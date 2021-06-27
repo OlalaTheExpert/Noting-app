@@ -7,11 +7,17 @@ import com.example.noted.data.NotesDao
 //declaration of the Dao to use only the dao
 
 class NotesRepository(private val NotesDao: NotesDao) {
-    val allNotes: List<Notes> = NotesDao.gettitles()
+    fun addNotes(notes: Notes){
+        NotesDao.insert()
+    }
+    fun getNotes(){
+        NotesDao.gettitles()
+    }
+
 
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
     suspend fun insert(notes: Notes) {
-        NotesDao.insert(notes)
+        NotesDao.insert()
     }
 }

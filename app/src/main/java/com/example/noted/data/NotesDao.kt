@@ -1,19 +1,18 @@
 package com.example.noted.data
 
 import androidx.room.*
-import java.util.*
-import java.util.concurrent.Flow
+
 //handles the queries of the application
 
 @Dao
 interface NotesDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insert(notes:Notes)
+    fun insert()
     @Update
     fun update(notes: Notes)
     @Delete
     fun delete(notes:Notes)
-    @Query("SELECT title FROM notes")
+    @Query("SELECT * FROM notes")
     fun gettitles(): List<Notes>
 
 
