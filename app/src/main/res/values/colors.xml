@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorTitle">#000000</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_accent">#000000</color>
+    <color name="background">#EFEEEE</color>
+    <color name="status_bar_scrim">@color/background</color>
+    <bool name="use_light_status_bar">true</bool>
+    <color name="nav_bar_scrim">@color/background</color>
+    <bool name="use_light_nav_bar">false</bool>
+    <color name="colorGrey">#D1D1D1</color>
+    <color name="colorBgBtn">#000000</color>
 </resources>
